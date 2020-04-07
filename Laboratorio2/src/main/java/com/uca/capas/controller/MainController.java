@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class MainController {
 	
-	@GetMapping("/agregarUsuario")
+	@GetMapping("/agregar")
 	public String enviarForm(Usuario usuario) {
-		return "Agregar Usuario";
+		return "agregar";
 	}
 	
-	@PostMapping("/agregarUsuario")
+	@PostMapping("/agregar")
 	public String procesarForm(Usuario usuario) {
-		return "mostrarMensaje";
+		return "mostrar";
 	}
 }
